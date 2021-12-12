@@ -34,7 +34,7 @@ app.use('/img', express.static(path.resolve(__dirname, "assets/img")))
 app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
 
 app.get('/', (req, res) => {
-    res.send("Project 2 Application");
+    res.render('index');
 })
 
 app.listen(PORT, () => {
